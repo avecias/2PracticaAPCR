@@ -1,0 +1,17 @@
+drop database if exists practica2;
+create database practica2;
+use practica2;
+create table cliente (id_cliente int(10) not null auto_increment, nombre varchar(30) not null, paterno varchar(30) not null, materno varchar(30) not null,sexo varchar(2) not null, password varchar(30) not null,edad int(3) not null, primary key (id_cliente));
+CREATE TABLE zapato (id_zapato int(10) not null auto_increment, precio int(10) NOT NULL, existencia int(10), descripcion varchar(200), archivo varchar(50) not null, primary key (id_zapato));
+insert into cliente (nombre,paterno,materno,sexo, password,edad) values ('Valentin', 'Avecias', 'Angeles', 'M', 'holamundo',26);
+insert into cliente (nombre,paterno,materno,sexo, password,edad) values ('Fernanda', 'Ramos', 'Madin', 'F', 'milly',21);
+INSERT INTO zapato (precio,existencia,descripcion) VALUES (700, 10, 'botines tacón','1.jpg');
+INSERT INTO zapato (precio,existencia,descripcion) VALUES (1200, 9, 'botas agujeta','2.jpg');
+INSERT INTO zapato (precio,existencia,descripcion) VALUES (600, 8, 'botines cafes','3.jpg');
+INSERT INTO zapato (precio,existencia,descripcion) VALUES (400, 4, 'botines negros','4.jpg');
+INSERT INTO zapato (precio,existencia,descripcion) VALUES (399, 5, 'flats negros','5.jpg');
+INSERT INTO zapato (precio,existencia,descripcion) VALUES (670, 3, 'zapatillas negras','6.jpg');
+INSERT INTO zapato (precio,existencia,descripcion) VALUES (670, 9, 'zapatillas crema','7.jpg');
+INSERT INTO zapato (precio,existencia,descripcion) VALUES (500, 5, 'flats miel','8.jpg');
+INSERT INTO zapato (precio,existencia,descripcion) VALUES (1000, 1,'tenis grises','9.jpg');
+INSERT INTO zapato (precio,existencia,descripcion) VALUES (400, 6, 'tenis GO','10.jpg');
